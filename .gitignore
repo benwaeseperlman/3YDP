@@ -1,1 +1,8 @@
 # List of untracked files to ignore
+*.autosave
+*.bin
+*.elf
+*.hex
+*.slxc
+*_ert_rtw/*
+slprj/*
