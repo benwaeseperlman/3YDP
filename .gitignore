@@ -6,3 +6,5 @@
 *.slxc
 *_ert_rtw/*
 slprj/*
+build/*
+cache/*
