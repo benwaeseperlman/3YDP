@@ -1,0 +1,10 @@
+side (green): PC_2
+front long (orange): PC_4
+front short (yellow): PC_3
+
+Right A (purple): PB_14
+Right B (blue): PB_13
+Left A (white): PB_1
+Left B (grey): PB_15
+
+Button: PB_7
