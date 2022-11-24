@@ -6,7 +6,7 @@ Adafruit_VL53L0X lox = Adafruit_VL53L0X();
 VL53L0X_RangingMeasurementData_t measure;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   // wait until serial port opens for native USB devices
   while (! Serial) {
@@ -39,7 +39,7 @@ void loop() {
   } else {
     Serial.println(" out of range ");
   }
-  delay(50);
+  delay(100);
 }
 
 void requestEvent()
