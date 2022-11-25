@@ -100,7 +100,7 @@ void setup() {
 
   digitalWrite(SHT_LOX1, LOW);
   digitalWrite(SHT_LOX2, LOW);
-  digitalWrite(I2C_PIN, HIGH);
+  digitalWrite(I2C_PIN, LOW);
 
   Serial.println(F("Both in reset mode...(pins are low)"));
   
@@ -120,9 +120,9 @@ void loop() {
 
 void requestEvent()
 {
-  Wire.write(measure1.RangeMilliMeter >> 24);
-  Wire.write(measure1.RangeMilliMeter >> 16);
-
   Wire.write(measure1.RangeMilliMeter >> 8);
   Wire.write(measure1.RangeMilliMeter);
+
+  Wire.write(measure2.RangeMilliMeter >> 8);
+  Wire.write(measure2.RangeMilliMeter);
 }
